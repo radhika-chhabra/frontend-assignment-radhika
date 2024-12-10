@@ -1,0 +1,73 @@
+.Paginated-Table {
+  background-color: whitesmoke;
+  border-radius: 0.2rem;
+}
+
+.Table-Title {
+  padding: 1.6rem;
+  color: cadetblue;
+}
+
+.Table-Footer {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-top: 1rem;
+}
+
+.Footer-Button {
+  background: none;
+  border: none;
+  font-weight: 600;
+  padding: 1.6rem;
+  cursor: pointer;
+}
+
+.Footer-Button:active {
+  color: blue;
+}
+
+.Footer-Button:disabled {
+  cursor: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  padding: 12px;
+  background-color: cadetblue;
+  font-weight: bold;
+  border: 1px solid #ddd;
+}
+
+td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+.Table-Header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 0 1.2rem;
+}
+
+.Rows-Per-Page-Options {
+  width: "4rem";
+  border-radius: "0.2rem";
+}
+
+.Rows-Per-Page-Label {
+  font-weight: 500;
+}
