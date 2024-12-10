@@ -1,3 +1,5 @@
+## [Demo](https://radhika-chhabra.github.io/frontend-assignment-radhika/)
+
 ### Run project: `yarn start`
 
 ### Run testCase: `yarn test`
