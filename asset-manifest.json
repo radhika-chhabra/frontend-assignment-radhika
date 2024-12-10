@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/radhika-chhabra/frontend-assignment-radhika/static/css/main.10335ec9.css",
+    "main.js": "/radhika-chhabra/frontend-assignment-radhika/static/js/main.6630593d.js",
+    "index.html": "/radhika-chhabra/frontend-assignment-radhika/index.html",
+    "main.10335ec9.css.map": "/radhika-chhabra/frontend-assignment-radhika/static/css/main.10335ec9.css.map",
+    "main.6630593d.js.map": "/radhika-chhabra/frontend-assignment-radhika/static/js/main.6630593d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.10335ec9.css",
+    "static/js/main.6630593d.js"
+  ]
+}
