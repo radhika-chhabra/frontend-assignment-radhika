@@ -1,8 +1,11 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+jest.mock('./pages/PaginatedTable', () => () => <div>Mocked Paginated Table</div>);
+
+describe('App Component', () => {
+  it('renders PaginatedTable component', () => {
+    render(<App />);
+    expect(screen.getByText('Mocked Paginated Table')).toBeInTheDocument();
+  });
 });

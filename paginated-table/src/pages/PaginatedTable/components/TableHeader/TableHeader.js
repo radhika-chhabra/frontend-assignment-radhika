@@ -10,9 +10,10 @@ const TableHeader = ({ rowsPerPage, setRowsPerPage, setCurrentPage }) => {
     <div className="Table-Header">
       <h2 className="Table-Title">Paginated Table</h2>
       <div>
-        <label className="Rows-Per-Page-Label">Rows per page: </label>
+        <label className="Rows-Per-Page-Label" htmlFor="rowsPerPage">Rows per page: </label>
         <select
           className="Rows-Per-Page-Options"
+          id="rowsPerPage"
           value={rowsPerPage}
           onChange={handleRowsPerPageChange}
         >

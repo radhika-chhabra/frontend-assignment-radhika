@@ -14,6 +14,6 @@ export const fetchTableData = async () => {
       return data;
     })
     .catch((error) => {
-      console.error("There was a problem with the fetch operation:", error);
+      throw Error("Network response was not ok " + error);
     });
 };

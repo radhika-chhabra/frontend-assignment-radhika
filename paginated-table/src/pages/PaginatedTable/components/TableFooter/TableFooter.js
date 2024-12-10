@@ -1,7 +1,5 @@
 import React from "react";
 
-import "../../paginatedTable.css";
-
 const TableFooter = ({ handlePageChange, currentPage, totalPages }) => {
   return (
     <div className="Table-Footer">

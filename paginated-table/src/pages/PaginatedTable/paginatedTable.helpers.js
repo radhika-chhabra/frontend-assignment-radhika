@@ -1,5 +1,3 @@
-import { ITEMS_PER_PAGE } from "./paginationTable.constants";
-
 export const getCurrentItems = (data, currentPage, rowsPerPage) => {
   const indexOfLastItem = currentPage * rowsPerPage;
   const indexOfFirstItem = indexOfLastItem - rowsPerPage;

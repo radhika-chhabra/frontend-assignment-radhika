@@ -8,17 +8,20 @@ import { getCurrentItems, getTotalPages } from "./paginatedTable.helpers";
 import { fetchTableData } from "./paginatedTable.actions";
 import { ITEMS_PER_PAGE } from "./paginationTable.constants";
 
+import "./paginatedTable.css";
+
 const PaginatedTable = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [rowsPerPage, setRowsPerPage] = useState(ITEMS_PER_PAGE);
   const [data, setData] = useState([]);
+  const [error, setError] = useState("");
 
   useEffect(() => {
     // fetch and set data on load
     const tableData = fetchTableData();
     tableData
       .then((response) => setData(response))
-      .catch((err) => console.error(err));
+      .catch((err) => setError("Error fetching data. Please try again later."));
   }, []);
 
   const currentItems = useMemo(
@@ -33,7 +36,10 @@ const PaginatedTable = () => {
   const handlePageChange = useCallback((page) => {
     setCurrentPage(page);
   }, []);
-  console.log("rowsPerPage", rowsPerPage);
+
+  if (error) {
+    return <div>{error}</div>;
+  }
 
   return (
     <div className="Paginated-Table">
@@ -51,7 +57,7 @@ const PaginatedTable = () => {
           </tr>
         </thead>
         <tbody>
-          <TableItems items={currentItems} />
+          {currentItems.length > 0 && <TableItems items={currentItems} />}
         </tbody>
       </table>
 

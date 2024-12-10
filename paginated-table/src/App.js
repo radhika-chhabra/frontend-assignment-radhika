@@ -1,5 +1,6 @@
-import './App.css';
 import PaginatedTable from './pages/PaginatedTable';
+
+import './App.css';
 
 function App() {
   return (
